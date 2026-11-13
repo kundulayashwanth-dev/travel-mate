@@ -1,267 +1,295 @@
-# Travel Mate ✈️
+# Travel Mate — Flutter Lab Experiments
 
-A Flutter mini-project demonstrating Dart and Flutter concepts through travel-themed experiments. The app launcher is in `lib/main.dart`; each experiment can also be run independently.
+This repository contains a collection of Flutter and Dart lab experiments built around a travel-themed application. Each experiment documents its **aim**, the Flutter/Dart concepts used, the expected or observed behaviour, a screenshot of the output, and a link to its source file.
 
-## Screenshots
+The project covers Dart basics, widgets, layouts, responsive design, navigation, state management, reusable components, forms, animations, REST API integration, testing, and debugging.
 
-Screenshots supplied with the project are stored in `screenshots/`.
+---
 
-### Core Flutter widgets and layouts
+## Experiment 1 — Dart Basics
 
-![Widgets](screenshots/exp02a_widgets.png)
-![Layouts](screenshots/exp02b_layouts.png)
+**Aim:** Understand the Dart program entry point, variables, arithmetic operations, string interpolation, and console output.
 
-### Responsive layouts
+**Explanation:** This experiment introduces the fundamentals of Dart through a simple travel-related calculation. It demonstrates how values are stored, processed, and printed to the console.
 
-![Responsive mobile](screenshots/exp03a_mobile.png)
-![Responsive tablet](screenshots/exp03a_tablet.png)
-![Responsive desktop](screenshots/exp03a_desktop.png)
-![Breakpoint mobile](screenshots/exp03b_mobile.png)
-![Breakpoint tablet](screenshots/exp03b_tablet.png)
-![Breakpoint desktop](screenshots/exp03b_desktop.png)
+**Source code:** [exp01b_dart_program.dart](lib/experiments/exp01b_dart_program.dart)
 
-### Navigation and booking
+---
 
-![Navigation first screen](screenshots/exp04a_first_screen.png)
-![Navigation second screen](screenshots/exp04a_second_screen.png)
-![Named routes home](screenshots/exp04b_home.png)
-![Booking screen](screenshots/exp04b_booking.png)
-![Booking confirmed](screenshots/exp04b_confirmed.png)
+## Experiment 2 — Flutter Widgets and Layouts
 
-### State, custom widgets, and themes
+**Aim:** Build user interfaces using common Flutter widgets and arrange elements with layout widgets.
 
-![State before](screenshots/exp05a_before.png)
-![State after](screenshots/exp05a_after.png)
-![Provider before](screenshots/exp05b_before.png)
-![Provider after](screenshots/exp05b_after.png)
-![Provider dependencies](screenshots/exp05b_pubspec_pub_get.png)
-![Custom widgets](screenshots/exp06a_custom_widgets.png)
-![Custom widget button](screenshots/exp06a_button_pressed.png)
-![Theme](screenshots/exp06b_theme.png)
+**Explanation:** The widget experiment introduces basic UI building blocks such as Text, Image, and Container. The layouts experiment demonstrates how Row, Column, and Stack arrange multiple widgets on a screen.
 
-### Forms and animations
+**Output screenshots**
 
-![Form empty](screenshots/exp07a_form_empty.png)
-![Form submitted](screenshots/exp07a_form_submitted.png)
-![Required field errors](screenshots/exp07b_required_errors.png)
-![Invalid email](screenshots/exp07b_invalid_email.png)
-![Animated widget before](screenshots/exp08a_before.png)
-![Animated widget after](screenshots/exp08a_after.png)
-![Fade and slide before](screenshots/exp08b_before.png)
-![Fade and slide after](screenshots/exp08b_after.png)
+![Experiment 2A — Basic widgets](screenshots/exp02a_widgets.png)
 
-### API, tests, and debugging
+![Experiment 2B — Layouts](screenshots/exp02b_layouts.png)
 
-![API country list](screenshots/exp09a_country_list.png)
-![API initial error state](screenshots/exp09a_first_api_error.png)
-![Country cards](screenshots/exp09b_country_cards.png)
-![Counter start](screenshots/exp10a_counter_start.png)
-![Counter after](screenshots/exp10a_counter_after.png)
-![Unit tests passed](screenshots/exp10a_unit_tests_passed.png)
-![Debug error screen](screenshots/exp10b_bug_error_screen.png)
-![Debugging fixed](screenshots/exp10b_fixed.png)
+**Source code:** [exp02a_widgets.dart](lib/experiments/exp02a_widgets.dart) · [exp02b_layouts.dart](lib/experiments/exp02b_layouts.dart)
 
-## Features
+---
 
-- Experiment launcher and independent experiment entry points.
-- Flutter widgets: Text, Image, Container, Row, Column, and Stack.
-- Responsive UI using MediaQuery and LayoutBuilder.
-- Navigation using Navigator and named routes.
-- Local state using setState and shared state using Provider.
-- Reusable custom widgets and app themes.
-- Form input and validation.
-- Implicit and explicit animations.
-- REST API requests and country cards.
-- Widget/unit tests and debugging/null-safety exercise.
+## Experiment 3 — Responsive UI
 
-## Tech Stack
+**Aim:** Create interfaces that adapt to different screen sizes and available layout constraints.
 
-- Flutter and Dart
-- Provider `^6.1.2`
-- http `^1.2.0`
-- flutter_test
+**Explanation:** The responsive UI experiment uses MediaQuery to read screen dimensions and adjust the interface for mobile, tablet, and desktop layouts. The breakpoint experiment uses LayoutBuilder to make layout decisions based on available width.
 
-## Getting Started
+**Observed output:** The screenshots demonstrate responsive layouts and breakpoint behaviour across mobile, tablet, and desktop screen sizes.
 
-Install Flutter and verify the setup:
+**Output screenshots**
+
+![Experiment 3A — Mobile layout](screenshots/exp03a_mobile.png)
+
+![Experiment 3A — Tablet layout](screenshots/exp03a_tablet.png)
+
+![Experiment 3A — Desktop layout](screenshots/exp03a_desktop.png)
+
+![Experiment 3B — Mobile breakpoint](screenshots/exp03b_mobile.png)
+
+![Experiment 3B — Tablet breakpoint](screenshots/exp03b_tablet.png)
+
+![Experiment 3B — Desktop breakpoint](screenshots/exp03b_desktop.png)
+
+**Source code:** [exp03a_responsive_ui.dart](lib/experiments/exp03a_responsive_ui.dart) · [exp03b_breakpoints.dart](lib/experiments/exp03b_breakpoints.dart)
+
+---
+
+## Experiment 4 — Navigation and Named Routes
+
+**Aim:** Navigate between multiple screens using Flutter's navigation system.
+
+**Explanation:** The navigation experiment demonstrates moving between screens with Navigator.push() and returning with Navigator.pop(). The named-routes experiment demonstrates registering route names and navigating to screens using those names. The booking flow shows a travel booking interaction and its confirmation state.
+
+**Output screenshots**
+
+![Experiment 4A — First screen](screenshots/exp04a_first_screen.png)
+
+![Experiment 4A — Second screen](screenshots/exp04a_second_screen.png)
+
+![Experiment 4B — Home screen](screenshots/exp04b_home.png)
+
+![Experiment 4B — Booking screen](screenshots/exp04b_booking.png)
+
+![Experiment 4B — Booking confirmation](screenshots/exp04b_confirmed.png)
+
+**Source code:** [exp04a_navigation.dart](lib/experiments/exp04a_navigation.dart) · [exp04b_named_routes.dart](lib/experiments/exp04b_named_routes.dart)
+
+---
+
+## Experiment 5 — State Management
+
+**Aim:** Understand how Flutter manages changing data inside widgets and shares state across an application.
+
+**Explanation:** The local-state example demonstrates setState() to update a widget when data changes. The Provider example introduces shared state management using Provider and ChangeNotifier, allowing listening widgets to rebuild when notified of updates.
+
+**Output screenshots**
+
+![Experiment 5A — State before update](screenshots/exp05a_before.png)
+
+![Experiment 5A — State after update](screenshots/exp05a_after.png)
+
+![Experiment 5B — Provider before update](screenshots/exp05b_before.png)
+
+![Experiment 5B — Provider after update](screenshots/exp05b_after.png)
+
+![Experiment 5B — Provider dependency setup](screenshots/exp05b_pubspec_pub_get.png)
+
+**Source code:** [exp05a_stateless_stateful.dart](lib/experiments/exp05a_stateless_stateful.dart) · [exp05b_provider.dart](lib/experiments/exp05b_provider.dart)
+
+---
+
+## Experiment 6 — Custom Widgets and Themes
+
+**Aim:** Build reusable Flutter components and apply consistent styling across screens.
+
+**Explanation:** The custom-widgets experiment demonstrates creating reusable UI elements instead of repeating the same widget code. The themes experiment shows how ThemeData can define a consistent visual style for an application.
+
+**Output screenshots**
+
+![Experiment 6A — Custom widgets](screenshots/exp06a_custom_widgets.png)
+
+![Experiment 6A — Custom widget button interaction](screenshots/exp06a_button_pressed.png)
+
+![Experiment 6B — App theme](screenshots/exp06b_theme.png)
+
+**Source code:** [exp06a_custom_widgets.dart](lib/experiments/exp06a_custom_widgets.dart) · [exp06b_themes.dart](lib/experiments/exp06b_themes.dart)
+
+---
+
+## Experiment 7 — Forms and Validation
+
+**Aim:** Collect user input and validate form fields before accepting a submission.
+
+**Explanation:** The form experiment demonstrates collecting traveller details through Flutter form widgets. The validation experiment uses form validators to check required fields and input formats, helping prevent invalid data from being submitted.
+
+**Output screenshots**
+
+![Experiment 7A — Empty form](screenshots/exp07a_form_empty.png)
+
+![Experiment 7A — Submitted form](screenshots/exp07a_form_submitted.png)
+
+![Experiment 7B — Required field validation errors](screenshots/exp07b_required_errors.png)
+
+![Experiment 7B — Invalid email validation](screenshots/exp07b_invalid_email.png)
+
+**Source code:** [exp07a_form.dart](lib/experiments/exp07a_form.dart) · [exp07b_form_validation.dart](lib/experiments/exp07b_form_validation.dart)
+
+---
+
+## Experiment 8 — Flutter Animations
+
+**Aim:** Understand how to animate widgets and create smoother user interface transitions.
+
+**Explanation:** The animations experiment demonstrates implicit animations using Flutter's animated widgets. The fade-and-slide experiment demonstrates transition effects that change a widget's opacity and position.
+
+**Output screenshots**
+
+![Experiment 8A — Animation before](screenshots/exp08a_before.png)
+
+![Experiment 8A — Animation after](screenshots/exp08a_after.png)
+
+![Experiment 8B — Fade and slide before](screenshots/exp08b_before.png)
+
+![Experiment 8B — Fade and slide after](screenshots/exp08b_after.png)
+
+**Source code:** [exp08a_animations.dart](lib/experiments/exp08a_animations.dart) · [exp08b_fade_slide.dart](lib/experiments/exp08b_fade_slide.dart)
+
+---
+
+## Experiment 9 — REST API Integration
+
+**Aim:** Retrieve data from an external REST API and display the results in a Flutter application.
+
+**Explanation:** The API experiments demonstrate making HTTP requests, handling API responses, decoding JSON data, and displaying the returned information in the UI. They also illustrate loading or error states when a network request does not succeed.
+
+**Output screenshots**
+
+![Experiment 9A — Country list](screenshots/exp09a_country_list.png)
+
+![Experiment 9A — Initial API error state](screenshots/exp09a_first_api_error.png)
+
+![Experiment 9B — Country cards](screenshots/exp09b_country_cards.png)
+
+**Source code:** [exp09a_fetch_api.dart](lib/experiments/exp09a_fetch_api.dart) · [exp09b_display_api_data.dart](lib/experiments/exp09b_display_api_data.dart)
+
+---
+
+## Experiment 10 — Counter App, Testing and Debugging
+
+**Aim:** Build a counter application, verify its behaviour with tests, and understand debugging and null-safety concepts.
+
+**Explanation:** The counter experiment demonstrates updating displayed values through user interaction. The test demonstrates how Flutter tests can verify expected widget behaviour. The debugging experiment explores identifying and correcting common errors, including issues related to null safety.
+
+**Output screenshots**
+
+![Experiment 10A — Counter initial state](screenshots/exp10a_counter_start.png)
+
+![Experiment 10A — Counter after interaction](screenshots/exp10a_counter_after.png)
+
+![Experiment 10A — Unit tests passed](screenshots/exp10a_unit_tests_passed.png)
+
+![Experiment 10B — Debug error screen](screenshots/exp10b_bug_error_screen.png)
+
+![Experiment 10B — Debugging fixed](screenshots/exp10b_fixed.png)
+
+**Source code:** [exp10a_counter_app.dart](lib/experiments/exp10a_counter_app.dart) · [exp10b_debugging.dart](lib/experiments/exp10b_debugging.dart) · [widget_test.dart](test/widget_test.dart)
+
+---
+
+## How to Run the Project
+
+### Prerequisites
+
+- Flutter SDK
+- Dart SDK (included with Flutter)
+- Android Studio, VS Code, or another Flutter-compatible IDE
+- An emulator, physical device, or Chrome for web
+
+Check your Flutter installation:
 
 ```bash
 flutter --version
 flutter doctor
 ```
 
-Clone the repository and install packages:
+### Clone and install dependencies
 
 ```bash
 git clone https://github.com/kundulayashwanth-dev/travel-mate.git
 cd travel-mate
 flutter pub get
+```
+
+### Run the application
+
+```bash
 flutter run
 ```
 
-Run in Chrome:
+To run in Chrome:
 
 ```bash
 flutter run -d chrome
 ```
 
-Run tests:
+### Run tests
 
 ```bash
 flutter test
 ```
 
-Run an individual experiment:
+### Run an individual experiment
+
+For example:
 
 ```bash
 flutter run -t lib/experiments/exp02a_widgets.dart
 ```
 
-## Experiments
+Replace the file path with the experiment you want to run.
 
-| Experiment | File | Topic |
-|---|---|---|
-| 1b | `exp01b_dart_program.dart` | Dart basics and trip cost |
-| 2a | `exp02a_widgets.dart` | Basic widgets |
-| 2b | `exp02b_layouts.dart` | Row, Column, Stack |
-| 3a | `exp03a_responsive_ui.dart` | Responsive UI with MediaQuery |
-| 3b | `exp03b_breakpoints.dart` | LayoutBuilder breakpoints |
-| 4a | `exp04a_navigation.dart` | Navigator push/pop |
-| 4b | `exp04b_named_routes.dart` | Named routes |
-| 5a | `exp05a_stateless_stateful.dart` | Stateless/Stateful and setState |
-| 5b | `exp05b_provider.dart` | Provider state management |
-| 6a | `exp06a_custom_widgets.dart` | Custom widgets |
-| 6b | `exp06b_themes.dart` | Themes and styling |
-| 7a | `exp07a_form.dart` | Traveller form |
-| 7b | `exp07b_form_validation.dart` | Form validation |
-| 8a | `exp08a_animations.dart` | Implicit animations |
-| 8b | `exp08b_fade_slide.dart` | Fade and slide transitions |
-| 9a | `exp09a_fetch_api.dart` | Fetch REST API data |
-| 9b | `exp09b_display_api_data.dart` | Display API data |
-| 10a | `exp10a_counter_app.dart` and `test/widget_test.dart` | Counter and tests |
-| 10b | `exp10b_debugging.dart` | Debugging and null safety |
+---
 
-Source files are in `lib/experiments/`.
+## Technologies Used
 
-## Code Snippets
+- **Flutter** — cross-platform UI toolkit
+- **Dart** — programming language
+- **Provider** — state management
+- **http** — HTTP requests and REST API integration
+- **flutter_test** — widget and unit testing
 
-### 1. Responsive layout
+---
 
-From `lib/experiments/exp03a_responsive_ui.dart`:
-
-```dart
-final screenWidth = MediaQuery.of(context).size.width;
-
-if (screenWidth < 600) {
-  return const Center(child: Text('Mobile Layout'));
-} else if (screenWidth < 1200) {
-  return const Center(child: Text('Tablet Layout'));
-} else {
-  return const Center(child: Text('Desktop Layout'));
-}
-```
-
-### 2. Navigation
-
-From `lib/experiments/exp04a_navigation.dart`:
-
-```dart
-Navigator.push(
-  context,
-  MaterialPageRoute(
-    builder: (context) => const SecondScreen(),
-  ),
-);
-
-// Return to the previous screen.
-Navigator.pop(context);
-```
-
-### 3. Shared state with Provider
-
-From `lib/experiments/exp05b_provider.dart`:
-
-```dart
-class Counter with ChangeNotifier {
-  int _count = 0;
-
-  int get count => _count;
-
-  void increment() {
-    _count++;
-    notifyListeners();
-  }
-}
-```
-
-### 4. Form validation
-
-From `lib/experiments/exp07b_form_validation.dart`:
-
-```dart
-TextFormField(
-  decoration: const InputDecoration(labelText: 'Email'),
-  keyboardType: TextInputType.emailAddress,
-  validator: (value) {
-    if (value == null || value.trim().isEmpty) {
-      return 'Email is required';
-    }
-    if (!RegExp(r'^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$').hasMatch(value)) {
-      return 'Enter a valid email';
-    }
-    return null;
-  },
-)
-```
-
-### 5. API request
-
-From `lib/experiments/exp09a_fetch_api.dart`:
-
-```dart
-final response = await http.get(
-  Uri.parse('https://countriesnow.space/api/v0.1/countries/capital'),
-);
-
-if (response.statusCode == 200) {
-  final data = json.decode(response.body) as Map<String, dynamic>;
-  setState(() {
-    countries = (data['data'] as List<dynamic>?) ?? [];
-  });
-}
-```
-
-## Dependencies
-
-Declared in `pubspec.yaml`:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  provider: ^6.1.2
-  http: ^1.2.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-```
-
-## API Note
-
-The API experiments require an internet connection and use the public CountriesNow API. API availability may vary. For Android, ensure internet permission is declared in `android/app/src/main/AndroidManifest.xml`:
-
-```xml
-<uses-permission android:name="android.permission.INTERNET" />
-```
-
-## Project Structure
+## Repository Structure
 
 ```text
 travel-mate/
 ├── lib/
 │   ├── main.dart
 │   └── experiments/
+│       ├── exp01b_dart_program.dart
+│       ├── exp02a_widgets.dart
+│       ├── exp02b_layouts.dart
+│       ├── exp03a_responsive_ui.dart
+│       ├── exp03b_breakpoints.dart
+│       ├── exp04a_navigation.dart
+│       ├── exp04b_named_routes.dart
+│       ├── exp05a_stateless_stateful.dart
+│       ├── exp05b_provider.dart
+│       ├── exp06a_custom_widgets.dart
+│       ├── exp06b_themes.dart
+│       ├── exp07a_form.dart
+│       ├── exp07b_form_validation.dart
+│       ├── exp08a_animations.dart
+│       ├── exp08b_fade_slide.dart
+│       ├── exp09a_fetch_api.dart
+│       ├── exp09b_display_api_data.dart
+│       ├── exp10a_counter_app.dart
+│       └── exp10b_debugging.dart
 ├── screenshots/
 ├── test/
 │   └── widget_test.dart
@@ -269,6 +297,8 @@ travel-mate/
 └── README.md
 ```
 
+---
+
 ## License
 
-No license file was supplied. Add a LICENSE file if you intend to distribute the project under an open-source license.
+No license file was supplied with this project. Add a LICENSE file if you intend to distribute it under an open-source license.
