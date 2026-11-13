@@ -12,7 +12,7 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Explanation:** This experiment introduces the fundamentals of Dart through a simple travel-related calculation. It demonstrates how values are stored, processed, and printed to the console.
 
-**Source code:** [exp01b_dart_program.dart](lib/experiments/exp01b_dart_program.dart)
+**Source code:** [exp01b_dart_program.dart](travel_mate/lib/experiments/exp01b_dart_program.dart)
 
 ---
 
@@ -24,11 +24,11 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 2A — Basic widgets](screenshots/exp02a_widgets.png)
+![Experiment 2A — Basic widgets](travel_mate/screenshots/exp02a_widgets.png)
 
-![Experiment 2B — Layouts](screenshots/exp02b_layouts.png)
+![Experiment 2B — Layouts](travel_mate/screenshots/exp02b_layouts.png)
 
-**Source code:** [exp02a_widgets.dart](lib/experiments/exp02a_widgets.dart) · [exp02b_layouts.dart](lib/experiments/exp02b_layouts.dart)
+**Source code:** [exp02a_widgets.dart](travel_mate/lib/experiments/exp02a_widgets.dart) · [exp02b_layouts.dart](travel_mate/lib/experiments/exp02b_layouts.dart)
 
 ---
 
@@ -42,19 +42,19 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 3A — Mobile layout](screenshots/exp03a_mobile.png)
+![Experiment 3A — Mobile layout](travel_mate/screenshots/exp03a_mobile.png)
 
-![Experiment 3A — Tablet layout](screenshots/exp03a_tablet.png)
+![Experiment 3A — Tablet layout](travel_mate/screenshots/exp03a_tablet.png)
 
-![Experiment 3A — Desktop layout](screenshots/exp03a_desktop.png)
+![Experiment 3A — Desktop layout](travel_mate/screenshots/exp03a_desktop.png)
 
-![Experiment 3B — Mobile breakpoint](screenshots/exp03b_mobile.png)
+![Experiment 3B — Mobile breakpoint](travel_mate/screenshots/exp03b_mobile.png)
 
-![Experiment 3B — Tablet breakpoint](screenshots/exp03b_tablet.png)
+![Experiment 3B — Tablet breakpoint](travel_mate/screenshots/exp03b_tablet.png)
 
-![Experiment 3B — Desktop breakpoint](screenshots/exp03b_desktop.png)
+![Experiment 3B — Desktop breakpoint](travel_mate/screenshots/exp03b_desktop.png)
 
-**Source code:** [exp03a_responsive_ui.dart](lib/experiments/exp03a_responsive_ui.dart) · [exp03b_breakpoints.dart](lib/experiments/exp03b_breakpoints.dart)
+**Source code:** [exp03a_responsive_ui.dart](travel_mate/lib/experiments/exp03a_responsive_ui.dart) · [exp03b_breakpoints.dart](travel_mate/lib/experiments/exp03b_breakpoints.dart)
 
 ---
 
@@ -66,17 +66,17 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 4A — First screen](screenshots/exp04a_first_screen.png)
+![Experiment 4A — First screen](travel_mate/screenshots/exp04a_first_screen.png)
 
-![Experiment 4A — Second screen](screenshots/exp04a_second_screen.png)
+![Experiment 4A — Second screen](travel_mate/screenshots/exp04a_second_screen.png)
 
-![Experiment 4B — Home screen](screenshots/exp04b_home.png)
+![Experiment 4B — Home screen](travel_mate/screenshots/exp04b_home.png)
 
-![Experiment 4B — Booking screen](screenshots/exp04b_booking.png)
+![Experiment 4B — Booking screen](travel_mate/screenshots/exp04b_booking.png)
 
-![Experiment 4B — Booking confirmation](screenshots/exp04b_confirmed.png)
+![Experiment 4B — Booking confirmation](travel_mate/screenshots/exp04b_confirmed.png)
 
-**Source code:** [exp04a_navigation.dart](lib/experiments/exp04a_navigation.dart) · [exp04b_named_routes.dart](lib/experiments/exp04b_named_routes.dart)
+**Source code:** [exp04a_navigation.dart](travel_mate/lib/experiments/exp04a_navigation.dart) · [exp04b_named_routes.dart](travel_mate/lib/experiments/exp04b_named_routes.dart)
 
 ---
 
@@ -88,17 +88,17 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 5A — State before update](screenshots/exp05a_before.png)
+![Experiment 5A — State before update](travel_mate/screenshots/exp05a_before.png)
 
-![Experiment 5A — State after update](screenshots/exp05a_after.png)
+![Experiment 5A — State after update](travel_mate/screenshots/exp05a_after.png)
 
-![Experiment 5B — Provider before update](screenshots/exp05b_before.png)
+![Experiment 5B — Provider before update](travel_mate/screenshots/exp05b_before.png)
 
-![Experiment 5B — Provider after update](screenshots/exp05b_after.png)
+![Experiment 5B — Provider after update](travel_mate/screenshots/exp05b_after.png)
 
-![Experiment 5B — Provider dependency setup](screenshots/exp05b_pubspec_pub_get.png)
+![Experiment 5B — Provider dependency setup](travel_mate/screenshots/exp05b_pubspec_pub_get.png)
 
-**Source code:** [exp05a_stateless_stateful.dart](lib/experiments/exp05a_stateless_stateful.dart) · [exp05b_provider.dart](lib/experiments/exp05b_provider.dart)
+**Source code:** [exp05a_stateless_stateful.dart](travel_mate/lib/experiments/exp05a_stateless_stateful.dart) · [exp05b_provider.dart](travel_mate/lib/experiments/exp05b_provider.dart)
 
 ---
 
@@ -110,13 +110,13 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 6A — Custom widgets](screenshots/exp06a_custom_widgets.png)
+![Experiment 6A — Custom widgets](travel_mate/screenshots/exp06a_custom_widgets.png)
 
-![Experiment 6A — Custom widget button interaction](screenshots/exp06a_button_pressed.png)
+![Experiment 6A — Custom widget button interaction](travel_mate/screenshots/exp06a_button_pressed.png)
 
-![Experiment 6B — App theme](screenshots/exp06b_theme.png)
+![Experiment 6B — App theme](travel_mate/screenshots/exp06b_theme.png)
 
-**Source code:** [exp06a_custom_widgets.dart](lib/experiments/exp06a_custom_widgets.dart) · [exp06b_themes.dart](lib/experiments/exp06b_themes.dart)
+**Source code:** [exp06a_custom_widgets.dart](travel_mate/lib/experiments/exp06a_custom_widgets.dart) · [exp06b_themes.dart](travel_mate/lib/experiments/exp06b_themes.dart)
 
 ---
 
@@ -128,15 +128,15 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 7A — Empty form](screenshots/exp07a_form_empty.png)
+![Experiment 7A — Empty form](travel_mate/screenshots/exp07a_form_empty.png)
 
-![Experiment 7A — Submitted form](screenshots/exp07a_form_submitted.png)
+![Experiment 7A — Submitted form](travel_mate/screenshots/exp07a_form_submitted.png)
 
-![Experiment 7B — Required field validation errors](screenshots/exp07b_required_errors.png)
+![Experiment 7B — Required field validation errors](travel_mate/screenshots/exp07b_required_errors.png)
 
-![Experiment 7B — Invalid email validation](screenshots/exp07b_invalid_email.png)
+![Experiment 7B — Invalid email validation](travel_mate/screenshots/exp07b_invalid_email.png)
 
-**Source code:** [exp07a_form.dart](lib/experiments/exp07a_form.dart) · [exp07b_form_validation.dart](lib/experiments/exp07b_form_validation.dart)
+**Source code:** [exp07a_form.dart](travel_mate/lib/experiments/exp07a_form.dart) · [exp07b_form_validation.dart](travel_mate/lib/experiments/exp07b_form_validation.dart)
 
 ---
 
@@ -148,15 +148,15 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 8A — Animation before](screenshots/exp08a_before.png)
+![Experiment 8A — Animation before](travel_mate/screenshots/exp08a_before.png)
 
-![Experiment 8A — Animation after](screenshots/exp08a_after.png)
+![Experiment 8A — Animation after](travel_mate/screenshots/exp08a_after.png)
 
-![Experiment 8B — Fade and slide before](screenshots/exp08b_before.png)
+![Experiment 8B — Fade and slide before](travel_mate/screenshots/exp08b_before.png)
 
-![Experiment 8B — Fade and slide after](screenshots/exp08b_after.png)
+![Experiment 8B — Fade and slide after](travel_mate/screenshots/exp08b_after.png)
 
-**Source code:** [exp08a_animations.dart](lib/experiments/exp08a_animations.dart) · [exp08b_fade_slide.dart](lib/experiments/exp08b_fade_slide.dart)
+**Source code:** [exp08a_animations.dart](travel_mate/lib/experiments/exp08a_animations.dart) · [exp08b_fade_slide.dart](travel_mate/lib/experiments/exp08b_fade_slide.dart)
 
 ---
 
@@ -168,13 +168,13 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 9A — Country list](screenshots/exp09a_country_list.png)
+![Experiment 9A — Country list](travel_mate/screenshots/exp09a_country_list.png)
 
-![Experiment 9A — Initial API error state](screenshots/exp09a_first_api_error.png)
+![Experiment 9A — Initial API error state](travel_mate/screenshots/exp09a_first_api_error.png)
 
-![Experiment 9B — Country cards](screenshots/exp09b_country_cards.png)
+![Experiment 9B — Country cards](travel_mate/screenshots/exp09b_country_cards.png)
 
-**Source code:** [exp09a_fetch_api.dart](lib/experiments/exp09a_fetch_api.dart) · [exp09b_display_api_data.dart](lib/experiments/exp09b_display_api_data.dart)
+**Source code:** [exp09a_fetch_api.dart](travel_mate/lib/experiments/exp09a_fetch_api.dart) · [exp09b_display_api_data.dart](travel_mate/lib/experiments/exp09b_display_api_data.dart)
 
 ---
 
@@ -186,17 +186,17 @@ The project covers Dart basics, widgets, layouts, responsive design, navigation,
 
 **Output screenshots**
 
-![Experiment 10A — Counter initial state](screenshots/exp10a_counter_start.png)
+![Experiment 10A — Counter initial state](travel_mate/screenshots/exp10a_counter_start.png)
 
-![Experiment 10A — Counter after interaction](screenshots/exp10a_counter_after.png)
+![Experiment 10A — Counter after interaction](travel_mate/screenshots/exp10a_counter_after.png)
 
-![Experiment 10A — Unit tests passed](screenshots/exp10a_unit_tests_passed.png)
+![Experiment 10A — Unit tests passed](travel_mate/screenshots/exp10a_unit_tests_passed.png)
 
-![Experiment 10B — Debug error screen](screenshots/exp10b_bug_error_screen.png)
+![Experiment 10B — Debug error screen](travel_mate/screenshots/exp10b_bug_error_screen.png)
 
-![Experiment 10B — Debugging fixed](screenshots/exp10b_fixed.png)
+![Experiment 10B — Debugging fixed](travel_mate/screenshots/exp10b_fixed.png)
 
-**Source code:** [exp10a_counter_app.dart](lib/experiments/exp10a_counter_app.dart) · [exp10b_debugging.dart](lib/experiments/exp10b_debugging.dart) · [widget_test.dart](test/widget_test.dart)
+**Source code:** [exp10a_counter_app.dart](travel_mate/lib/experiments/exp10a_counter_app.dart) · [exp10b_debugging.dart](travel_mate/lib/experiments/exp10b_debugging.dart) · [widget_test.dart](travel_mate/test/widget_test.dart)
 
 ---
 
@@ -220,7 +220,7 @@ flutter doctor
 
 ```bash
 git clone https://github.com/kundulayashwanth-dev/travel-mate.git
-cd travel-mate
+cd travel-mate/travel_mate
 flutter pub get
 ```
 
@@ -247,7 +247,7 @@ flutter test
 For example:
 
 ```bash
-flutter run -t lib/experiments/exp02a_widgets.dart
+flutter run -t travel_mate/lib/experiments/exp02a_widgets.dart
 ```
 
 Replace the file path with the experiment you want to run.
