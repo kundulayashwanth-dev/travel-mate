@@ -1,50 +1,78 @@
 # Travel Mate ✈️
 
-A Flutter learning project demonstrating Dart and Flutter fundamentals through **19 travel-themed experiments**. A launcher app in `lib/main.dart` lets you open each experiment, and individual experiments can also be run directly.
-
-> **Source archive note:** The uploaded ZIP contained source code but no screenshot/image assets. The screenshot section below lists suggested captures and filenames; it does not claim screenshots are already present.
+A Flutter mini-project demonstrating Dart and Flutter concepts through travel-themed experiments. The app launcher is in `lib/main.dart`; each experiment can also be run independently.
 
 ## Screenshots
 
-Create a `screenshots/` directory and add captures from the running app using the suggested filenames:
+Screenshots supplied with the project are stored in `screenshots/`.
 
-```text
-screenshots/
-├── 01-experiment-launcher.png
-├── 02-widgets.png
-├── 03-layouts.png
-├── 04-responsive-mobile.png
-├── 05-responsive-tablet.png
-├── 06-navigation.png
-├── 07-provider-booking.png
-├── 08-form-validation.png
-├── 09-animations.png
-├── 10-api-countries.png
-└── 11-counter-tests.png
-```
+### Core Flutter widgets and layouts
 
-After adding the files, display them in this section with Markdown image syntax, for example:
+![Widgets](screenshots/exp02a_widgets.png)
+![Layouts](screenshots/exp02b_layouts.png)
 
-```markdown
-![Experiment launcher](screenshots/01-experiment-launcher.png)
-![Widgets example](screenshots/02-widgets.png)
-![Responsive mobile layout](screenshots/04-responsive-mobile.png)
-```
+### Responsive layouts
 
-**Capture guide:** Run the launcher, open each experiment, and capture the screen. Capture responsive UI at mobile and tablet/desktop widths. Wait for the country list to load before capturing the API experiment.
+![Responsive mobile](screenshots/exp03a_mobile.png)
+![Responsive tablet](screenshots/exp03a_tablet.png)
+![Responsive desktop](screenshots/exp03a_desktop.png)
+![Breakpoint mobile](screenshots/exp03b_mobile.png)
+![Breakpoint tablet](screenshots/exp03b_tablet.png)
+![Breakpoint desktop](screenshots/exp03b_desktop.png)
+
+### Navigation and booking
+
+![Navigation first screen](screenshots/exp04a_first_screen.png)
+![Navigation second screen](screenshots/exp04a_second_screen.png)
+![Named routes home](screenshots/exp04b_home.png)
+![Booking screen](screenshots/exp04b_booking.png)
+![Booking confirmed](screenshots/exp04b_confirmed.png)
+
+### State, custom widgets, and themes
+
+![State before](screenshots/exp05a_before.png)
+![State after](screenshots/exp05a_after.png)
+![Provider before](screenshots/exp05b_before.png)
+![Provider after](screenshots/exp05b_after.png)
+![Provider dependencies](screenshots/exp05b_pubspec_pub_get.png)
+![Custom widgets](screenshots/exp06a_custom_widgets.png)
+![Custom widget button](screenshots/exp06a_button_pressed.png)
+![Theme](screenshots/exp06b_theme.png)
+
+### Forms and animations
+
+![Form empty](screenshots/exp07a_form_empty.png)
+![Form submitted](screenshots/exp07a_form_submitted.png)
+![Required field errors](screenshots/exp07b_required_errors.png)
+![Invalid email](screenshots/exp07b_invalid_email.png)
+![Animated widget before](screenshots/exp08a_before.png)
+![Animated widget after](screenshots/exp08a_after.png)
+![Fade and slide before](screenshots/exp08b_before.png)
+![Fade and slide after](screenshots/exp08b_after.png)
+
+### API, tests, and debugging
+
+![API country list](screenshots/exp09a_country_list.png)
+![API initial error state](screenshots/exp09a_first_api_error.png)
+![Country cards](screenshots/exp09b_country_cards.png)
+![Counter start](screenshots/exp10a_counter_start.png)
+![Counter after](screenshots/exp10a_counter_after.png)
+![Unit tests passed](screenshots/exp10a_unit_tests_passed.png)
+![Debug error screen](screenshots/exp10b_bug_error_screen.png)
+![Debugging fixed](screenshots/exp10b_fixed.png)
 
 ## Features
 
-- Experiment launcher with navigation to each example.
-- Flutter widgets and layout composition.
-- Responsive layouts with `MediaQuery` and `LayoutBuilder`.
-- Screen navigation with `Navigator.push/pop` and named routes.
-- Local state with `setState` and shared state with Provider.
+- Experiment launcher and independent experiment entry points.
+- Flutter widgets: Text, Image, Container, Row, Column, and Stack.
+- Responsive UI using MediaQuery and LayoutBuilder.
+- Navigation using Navigator and named routes.
+- Local state using setState and shared state using Provider.
 - Reusable custom widgets and app themes.
-- Forms and input validation.
+- Form input and validation.
 - Implicit and explicit animations.
-- REST API requests and country data cards.
-- Unit/widget tests and a null-safety debugging example.
+- REST API requests and country cards.
+- Widget/unit tests and debugging/null-safety exercise.
 
 ## Tech Stack
 
@@ -55,16 +83,14 @@ After adding the files, display them in this section with Markdown image syntax,
 
 ## Getting Started
 
-### Requirements
-
-Install the Flutter SDK and verify your setup:
+Install Flutter and verify the setup:
 
 ```bash
 flutter --version
 flutter doctor
 ```
 
-### Clone and run
+Clone the repository and install packages:
 
 ```bash
 git clone https://github.com/kundulayashwanth-dev/travel-mate.git
@@ -79,81 +105,47 @@ Run in Chrome:
 flutter run -d chrome
 ```
 
-Run the tests:
+Run tests:
 
 ```bash
 flutter test
 ```
 
-Run one experiment directly:
+Run an individual experiment:
 
 ```bash
 flutter run -t lib/experiments/exp02a_widgets.dart
 ```
 
-The uploaded source is a Flutter package tree. If platform folders such as `android/`, `ios/`, or `web/` are missing locally, generate the platform scaffolding with:
-
-```bash
-flutter create --project-name travel_mate .
-flutter pub get
-```
-
 ## Experiments
 
-| Experiment | File | Concept |
+| Experiment | File | Topic |
 |---|---|---|
-| 1b | `exp01b_dart_program.dart` | Dart basics and trip-cost calculation |
-| 2a | `exp02a_widgets.dart` | Text, Image, Container |
+| 1b | `exp01b_dart_program.dart` | Dart basics and trip cost |
+| 2a | `exp02a_widgets.dart` | Basic widgets |
 | 2b | `exp02b_layouts.dart` | Row, Column, Stack |
 | 3a | `exp03a_responsive_ui.dart` | Responsive UI with MediaQuery |
 | 3b | `exp03b_breakpoints.dart` | LayoutBuilder breakpoints |
 | 4a | `exp04a_navigation.dart` | Navigator push/pop |
 | 4b | `exp04b_named_routes.dart` | Named routes |
-| 5a | `exp05a_stateless_stateful.dart` | StatelessWidget, StatefulWidget, setState |
-| 5b | `exp05b_provider.dart` | Provider and ChangeNotifier |
-| 6a | `exp06a_custom_widgets.dart` | Reusable custom widgets |
-| 6b | `exp06b_themes.dart` | ThemeData and styling |
+| 5a | `exp05a_stateless_stateful.dart` | Stateless/Stateful and setState |
+| 5b | `exp05b_provider.dart` | Provider state management |
+| 6a | `exp06a_custom_widgets.dart` | Custom widgets |
+| 6b | `exp06b_themes.dart` | Themes and styling |
 | 7a | `exp07a_form.dart` | Traveller form |
 | 7b | `exp07b_form_validation.dart` | Form validation |
-| 8a | `exp08a_animations.dart` | AnimatedContainer and AnimatedOpacity |
-| 8b | `exp08b_fade_slide.dart` | FadeTransition and SlideTransition |
-| 9a | `exp09a_fetch_api.dart` | Fetch data from a REST API |
-| 9b | `exp09b_display_api_data.dart` | Display API data in cards |
-| 10a | `exp10a_counter_app.dart` + `test/widget_test.dart` | Counter and widget tests |
-| 10b | `exp10b_debugging.dart` | Debug output and null-safety |
+| 8a | `exp08a_animations.dart` | Implicit animations |
+| 8b | `exp08b_fade_slide.dart` | Fade and slide transitions |
+| 9a | `exp09a_fetch_api.dart` | Fetch REST API data |
+| 9b | `exp09b_display_api_data.dart` | Display API data |
+| 10a | `exp10a_counter_app.dart` and `test/widget_test.dart` | Counter and tests |
+| 10b | `exp10b_debugging.dart` | Debugging and null safety |
 
-All experiment source files are under `lib/experiments/`.
+Source files are in `lib/experiments/`.
 
 ## Code Snippets
 
-The following concise examples are adapted directly from the project source files.
-
-### 1. Compose a Travel Mate screen
-
-From `lib/experiments/exp02a_widgets.dart`:
-
-```dart
-Column(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    const Text(
-      'Hello, Welcome to Travel Mate!',
-      style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-    ),
-    const SizedBox(height: 16),
-    Container(
-      padding: const EdgeInsets.all(16),
-      color: Colors.blue,
-      child: const Text(
-        'Trip of the Week: Goa, 3 Days - Rs.8999',
-        style: TextStyle(color: Colors.white, fontSize: 16),
-      ),
-    ),
-  ],
-)
-```
-
-### 2. Build a responsive layout
+### 1. Responsive layout
 
 From `lib/experiments/exp03a_responsive_ui.dart`:
 
@@ -169,7 +161,7 @@ if (screenWidth < 600) {
 }
 ```
 
-### 3. Navigate between screens
+### 2. Navigation
 
 From `lib/experiments/exp04a_navigation.dart`:
 
@@ -185,7 +177,7 @@ Navigator.push(
 Navigator.pop(context);
 ```
 
-### 4. Manage booking state with Provider
+### 3. Shared state with Provider
 
 From `lib/experiments/exp05b_provider.dart`:
 
@@ -202,7 +194,7 @@ class Counter with ChangeNotifier {
 }
 ```
 
-### 5. Validate a traveller's email
+### 4. Form validation
 
 From `lib/experiments/exp07b_form_validation.dart`:
 
@@ -222,30 +214,13 @@ TextFormField(
 )
 ```
 
-### 6. Animate the trip search screen
-
-From `lib/experiments/exp08a_animations.dart`:
-
-```dart
-AnimatedContainer(
-  duration: const Duration(seconds: 1),
-  width: boxSize,
-  height: boxSize,
-  color: Colors.blue,
-  curve: Curves.easeInOut,
-  child: const Icon(Icons.flight_takeoff, color: Colors.white),
-)
-```
-
-### 7. Request country data from an API
+### 5. API request
 
 From `lib/experiments/exp09a_fetch_api.dart`:
 
 ```dart
 final response = await http.get(
-  Uri.parse(
-    'https://countriesnow.space/api/v0.1/countries/capital',
-  ),
+  Uri.parse('https://countriesnow.space/api/v0.1/countries/capital'),
 );
 
 if (response.statusCode == 200) {
@@ -256,22 +231,9 @@ if (response.statusCode == 200) {
 }
 ```
 
-### 8. Test the counter model
-
-From `test/widget_test.dart`:
-
-```dart
-test('increment() increases count by 1', () {
-  final counter = CounterData();
-  counter.increment();
-
-  expect(counter.count, 1);
-});
-```
-
 ## Dependencies
 
-The main dependencies are declared in `pubspec.yaml`:
+Declared in `pubspec.yaml`:
 
 ```yaml
 dependencies:
@@ -285,25 +247,13 @@ dev_dependencies:
     sdk: flutter
 ```
 
-## API and Internet Permission
+## API Note
 
-Experiments 9a and 9b need an internet connection and call the CountriesNow public API. Results depend on that external service being available.
-
-For Android builds, make sure internet permission is present in `android/app/src/main/AndroidManifest.xml`:
+The API experiments require an internet connection and use the public CountriesNow API. API availability may vary. For Android, ensure internet permission is declared in `android/app/src/main/AndroidManifest.xml`:
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
-
-## Tests
-
-Run the tests with:
-
-```bash
-flutter test
-```
-
-The widget test file checks the counter's initial value, increment behavior, listener notifications, and the button interaction in the counter screen.
 
 ## Project Structure
 
@@ -312,11 +262,7 @@ travel-mate/
 ├── lib/
 │   ├── main.dart
 │   └── experiments/
-│       ├── exp01b_dart_program.dart
-│       ├── exp02a_widgets.dart
-│       ├── exp02b_layouts.dart
-│       ├── ...
-│       └── exp10b_debugging.dart
+├── screenshots/
 ├── test/
 │   └── widget_test.dart
 ├── pubspec.yaml
@@ -325,4 +271,4 @@ travel-mate/
 
 ## License
 
-No license file was included in the supplied archive. Add a `LICENSE` file if you plan to publish the project under a specific open-source license.
+No license file was supplied. Add a LICENSE file if you intend to distribute the project under an open-source license.
