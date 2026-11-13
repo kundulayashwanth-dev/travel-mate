@@ -1,0 +1,20 @@
+name: travel_mate
+description: Travel Mate - a Flutter mini project built experiment-wise (Experiments 1 to 10).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2   # Experiment 5b
+  http: ^1.2.0       # Experiment 9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
